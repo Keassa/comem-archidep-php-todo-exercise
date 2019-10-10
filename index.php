@@ -2,7 +2,7 @@
 
 define('BASE_URL', '/');
 define('DB_USER', 'todolist');
-define('DB_PASS', 'chAngeMeN0w!');
+define('DB_PASS', 'psql');
 define('DB_NAME', 'todolist');
 define('DB_HOST', '127.0.0.1');
 define('DB_PORT', '3306');
@@ -70,7 +70,7 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-$selectQuery = ''; // IMPLEMENT ME
+$selectQuery = 'select * from todo order by id'; 
 $items = $db->query($selectQuery);
 ?>
 
