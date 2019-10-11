@@ -70,11 +70,7 @@ if (isset($_POST['action'])) {
 /**
  * Select all tasks from the database.
  */
-<<<<<<< HEAD
 $selectQuery = 'select * from todo order by id asc'; // IMPLEMENT ME
-=======
-$selectQuery = 'select * from todo order by id'; 
->>>>>>> 895c7a43ee46e21ddc591004dccc1c1cc9646bca
 $items = $db->query($selectQuery);
 ?>
 
